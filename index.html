@@ -1,0 +1,382 @@
+<!-- Team trees -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Trees</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14d91ba717.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <style type="text/css">
+   	@media only screen and (max-width: 760px){
+    .nav-links{
+        padding-right: 70px;
+    }
+    .nav-links li{
+        padding-right: 20px;
+    }
+    .container{
+        flex-direction: column;
+        
+    }
+    .home-img img, .about-img img, .tag2-img img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .tag-info{
+        margin-bottom: 100px;
+    }
+	   }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+.navv{
+    max-width: 100vw;
+    height: auto;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background-color: #32CD32;
+    color: white;
+    align-items: center;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    text-decoration: none;
+}
+.nav-links li{
+    list-style: none;
+
+}
+.nav-links{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.logo{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-family: 'Playfair';
+    
+} 
+.logo h3{
+    font-size: 3rem;
+}
+.container{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.home, .tag{
+    width: 100%;
+    min-width: 50vh;
+    margin: 5rem 0 5rem 5rem;
+    flex-direction: row;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.home{
+    margin-top: 4rem;
+}
+.tag{
+    padding: 5rem 0; 
+    height: 100vh;
+    color: #fff;
+}
+.home .home-img .home-img-wrapper, .tag-img-wrapper{
+    height: auto;
+}
+.home-img-wrapper img{
+    width: 600px;
+}
+.tag-img-wrapper img{
+    width: 500px;
+}
+.home .home-info .home-info-desc{
+    font-size: 5rem;
+    margin-top: 10px;
+    margin-bottom: 2.1rem;
+    font-weight: 450;
+    padding-left: 10px;
+}
+.home form{
+    padding-left: 10px;
+}
+.tag-info{
+    font-size: 2rem;
+    background-color: #32CD32;
+    padding: 50px;
+    font-weight: 450;
+    margin-left: 80px;
+    border-radius: 20px;
+    
+}
+.icons-pic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    margin-bottom: 5rem;
+}
+.one-pic img{
+    height: 300px;
+    padding-right: 30px;
+    margin: 50px ;
+
+}
+.one-pic{
+    display: flex;
+    justify-content: center;
+}
+.one-desc h3{
+    text-align: center;
+    margin: 55px 0;
+    font-size: 3.5rem;
+}
+#footer{
+	padding: 2% 15%;
+	text-align: center;
+    font-size: 1.3rem;
+}
+.endicon{
+	padding: 10px;
+}
+.abt-h1{
+    padding: 6% 3% 0% 8%;
+    font-size: 5rem;
+}
+.tag2, .tag3{
+    height: fit-content;
+}
+.tag2-img img{
+    height: 400px;
+    width: auto;
+}
+.tag3 img{
+    height: 350px;
+    width: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+} 
+.cont{
+    color: white;
+    margin: 16px 0 6px;
+    font-size: 16px;
+    letter-spacing: 1px; 
+}
+  
+input,
+textarea{
+    border: solid 1px #cbcbcb; 
+    border-radius: 6px;
+    width: 100%;
+    padding: 6px 12px;
+    outline: none;
+    margin: 4px auto;
+}  
+input{
+    height: 28px;
+}  
+textarea{
+    height: 62px;
+}
+button{
+    height: 40px;
+    width: 60%;
+    margin: 24px auto;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background:#38940a ;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+button:hover{
+    background: #4ad104;
+}
+.info2{
+    padding: 30px 70px;
+}
+.btnn{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+
+
+   </style>
+</head>
+<body>
+    <!-- navbar -->   
+    <div class="navv">
+        <div class="logo">
+           <h3>Team Trees</h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- home -->
+    <section id="home">
+
+        <div class="home container">
+            
+                <div class="home-info">
+                
+                    <p class="home-info-desc">help  to protect the lungs of earth.
+                    </p>
+                 
+                        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H14NMhZGurhksM" async> </script> </form>
+
+                </div>
+                <div class="home-img">
+                    <div class="home-img-wrapper">
+                        <img src="images/img1.gif" alt="sorry">
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </section>
+    <!-- tag -->
+    <section id="tag">
+
+        <div class="tag container">
+            <div class="about-img">
+                <div class="tag-img-wrapper">
+                    <img src="images/logo.jpg" alt="nope">
+                </div>  
+            </div>
+            <div class="tag-info">
+                
+                <p class="home-info-desc">The best time to plant a tree was 20 years ago. The second best time is now.
+                </p>
+            </div>
+                       
+        </div>
+    </section>
+    <!-- icons -->
+    <section id="icons">
+    	 <h1 class="abt-h1">What we do?</h1>
+        <div class="icons-pic container">
+            <div class="one">
+                <div class="one-pic">
+                    <img src="images/plant.jpg" alt="">
+                </div>
+                <div class="one-desc">
+                    <h3>PLANT</h3>
+                </div>
+            </div>
+            <div class="one">
+                <div class="one-pic">
+                    <img src="images/protect2.jpg" alt="">
+                </div>
+                <div class="one-desc">
+                    <h3>PROTECT</h3>
+                </div>
+            </div>
+            <div class="one">
+                <div class="one-pic">
+                    <img src="images/aware.jpg" alt="">
+                </div>
+                <div class="one-desc">
+                    <h3>AWARE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div id="about">
+    <h1 class="abt-h1">Who we are?</h1>
+    <section id="tag">
+
+        <div class="tag tag2 container">
+            <div class="about-img">
+                <div class="tag-img-wrapper tag2-img">
+                    <img src="images/aboutus.jpg" alt="nope">
+                </div>  
+            </div>
+            <div class="tag-info">
+                
+                <p class="tag-info-desc">We are group of people working together to sustainably manage forests and natural resources for the benefit of our climate, the environment and humanity. <br>Our team is spread over 3 continents and 12 countries, sharing the same commitment for a better world.<br>Our goal is to plant 1 million trees by 2025 and  demonstrating a positive impact on climate, communities and nature.<br>
+                </p>
+            </div>
+                       
+        </div>
+    </section>
+</div>
+ <div id="contact">
+    <h1 class="abt-h1">Contact us</h1>
+    <section id="tag">
+
+        <div class="tag tag3 container">
+            <div class="about-img">
+                <div class="tag-img-wrapper tag2-img">
+                    <img src="images/contact.jpg" alt="nope" ">
+                </div>  
+            </div>
+            <div class="tag-info info2">
+                
+                <form>
+                    <h4 class="cont">Name</h4>
+                    <input type="text" name="name">
+                    <h4 class="cont">Email</h4>
+                    <input type="text" name="email">
+                    <h4 class="cont">Message</h4>
+                    <textarea></textarea><br>
+                    <div class="btnn"><button>SEND</button></div>
+                  </form>
+            </div>
+                       
+        </div>
+    </section>
+    </div>
+    <footer id="footer">
+
+        <a href="https://www.linkedin.com/in/ujjwal-kuikel-872786182/" target="_blank"><i class="fab fa-linkedin endicon" ></i></a>
+        <a href="https://github.com/ujjwalkuikel" target="_blank"><i class="fab fa-github endicon" ></i></a>
+        <a href="https://www.facebook.com/ujjwal.kuikel.3/" target="_blank"><i class="fab fa-facebook-f endicon" ></i></a>
+        <a href="mailto:ujjwalkuikel3@gmail.com" ><i class="fas fa-envelope endicon"></i></a>   
+        <p>© Copyright 2021 Ujjwal Kuikel</p>
+      </footer>
+</body>
+</html>
